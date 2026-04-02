@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Health Signal Monitor Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0f1720;
+      --card: #182532;
+      --text: #eef4f8;
+      --muted: #a8bac7;
+      --accent: #4ad2b8;
+      --border: rgba(255,255,255,0.08);
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f4f8fb;
+        --card: #ffffff;
+        --text: #12202b;
+        --muted: #597080;
+        --accent: #167c70;
+        --border: rgba(17,32,43,0.10);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, var(--bg), color-mix(in srgb, var(--bg) 88%, black 12%));
+      color: var(--text);
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      margin-top: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+    h1, h2 { line-height: 1.2; margin: 0 0 12px; }
+    h1 { font-size: 2.1rem; }
+    h2 { font-size: 1.15rem; margin-top: 0; }
+    p, li { color: var(--text); }
+    .muted { color: var(--muted); }
+    a { color: var(--accent); }
+    ul { margin: 10px 0 0; padding-left: 20px; }
+    .eyebrow {
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">Privacy Policy</div>
+    <h1>Health Signal Monitor</h1>
+    <p class="muted">Last updated: April 1, 2026</p>
+    <div class="links">
+      <a href="./support.html">Support</a>
+    </div>
+
+    <section class="card">
+      <h2>Overview</h2>
+      <p>
+        Health Signal Monitor is a privacy-first iPhone app that reads selected Apple Health data to help users notice changes in their personal baseline patterns
+        and suggest possible follow-up actions when more information may be useful.
+      </p>
+      <p>
+        This app is designed so that raw Health data stays on the device by default.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Health Data We Access</h2>
+      <p>
+        Depending on the permissions you grant, the app may read selected Apple Health data such as resting heart rate, sleep analysis, step count,
+        heart rate variability, respiratory rate, blood oxygen, weight, blood pressure, ECG metadata, and workouts.
+      </p>
+      <p>
+        The app may also store journal entries or symptom/context notes that you enter directly in the app.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>What Stays On Device</h2>
+      <ul>
+        <li>Raw HealthKit samples are read from Apple Health when needed and are not cached locally by the app.</li>
+        <li>The app stores derived summaries, baselines, explanation history, prompt history, journal entries, HealthKit anchors, authorization state, and capability state on the device.</li>
+        <li>Local database files use iOS file protection, and the local database key is kept in Keychain.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>What Leaves The Device</h2>
+      <ul>
+        <li>Cloud analysis is off in the current app build.</li>
+        <li>The app does not send raw health data to our servers because the current app does not operate a cloud backend for analysis.</li>
+        <li>If you choose to contact support by email, the information you include in that email leaves your device through your email provider.</li>
+        <li>No health-derived summaries are exported unless a future version adds an explicit user-controlled export or external processing flow.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>How We Use Data</h2>
+      <ul>
+        <li>To compute baseline-aware summaries and app explanations.</li>
+        <li>To determine whether the app has enough recent information to make a bounded statement.</li>
+        <li>To present follow-up suggestions, notifications, and explanation history inside the app.</li>
+        <li>To store your journal/context entries locally on your device.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Sharing And Disclosure</h2>
+      <p>
+        We do not sell personal data. The current app build does not include cloud analytics, advertising SDKs, or third-party advertising.
+      </p>
+      <p>
+        If a future version adds external processing or export features, those flows should be explicit and user-controlled.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Your Controls</h2>
+      <ul>
+        <li>You control which Apple Health permissions you grant.</li>
+        <li>You can turn selected Health data retrieval on or off inside the app.</li>
+        <li>You can delete local app data using the app’s delete/reset controls.</li>
+        <li>You can manage Health permissions through the Apple Health app and iOS Settings.</li>
+      </ul>
+      <p class="muted">
+        In the current app, deleting all data clears the local database, Keychain entries, prompt history, explanation history, journal entries, and resets first-launch state.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Important Boundary</h2>
+      <p>
+        Health Signal Monitor is intended for informational and decision-support purposes only.
+        It does not diagnose conditions, rule out medical issues, provide emergency monitoring, or replace professional medical care.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p>
+        If you have questions about this policy, contact
+        <a href="mailto:healthsignalmonitor@gmail.com">healthsignalmonitor@gmail.com</a>.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

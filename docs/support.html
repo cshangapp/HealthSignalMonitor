@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Health Signal Monitor Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0f1720;
+      --card: #182532;
+      --text: #eef4f8;
+      --muted: #a8bac7;
+      --accent: #4ad2b8;
+      --border: rgba(255,255,255,0.08);
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f4f8fb;
+        --card: #ffffff;
+        --text: #12202b;
+        --muted: #597080;
+        --accent: #167c70;
+        --border: rgba(17,32,43,0.10);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, var(--bg), color-mix(in srgb, var(--bg) 88%, black 12%));
+      color: var(--text);
+    }
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      margin-top: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+    h1, h2 { line-height: 1.2; margin: 0 0 12px; }
+    h1 { font-size: 2.1rem; }
+    h2 { font-size: 1.15rem; margin-top: 0; }
+    p, li { color: var(--text); }
+    .muted { color: var(--muted); }
+    a { color: var(--accent); }
+    ul { margin: 10px 0 0; padding-left: 20px; }
+    .eyebrow {
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">Support</div>
+    <h1>Health Signal Monitor</h1>
+    <p class="muted">Support information for the Health Signal Monitor iPhone app.</p>
+    <div class="links">
+      <a href="./privacy.html">Privacy Policy</a>
+    </div>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p>
+        For support questions, bug reports, or App Store issues, contact:
+        <a href="mailto:healthsignalmonitor@gmail.com">healthsignalmonitor@gmail.com</a>
+      </p>
+      <p class="muted">
+        Support is handled by email. Include enough detail for the issue to be reproduced without needing follow-up just to understand the problem.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>What To Include In A Support Request</h2>
+      <ul>
+        <li>Your iPhone model and iOS version.</li>
+        <li>The app version and build number.</li>
+        <li>A short description of what happened.</li>
+        <li>Screenshots if the issue is visual or data-related.</li>
+        <li>Whether the issue involves Apple Health permissions or Apple Watch data.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>What Support Can Help With</h2>
+      <ul>
+        <li>Questions about app behavior, Health access prompts, and chart values.</li>
+        <li>Bug reports, crashes, and incorrect metric displays.</li>
+        <li>How to delete local app data or reset onboarding-related state.</li>
+        <li>App Store download or update issues specific to this app.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Troubleshooting Basics</h2>
+      <ul>
+        <li>Make sure Apple Health access is enabled for the data types you want the app to read.</li>
+        <li>After changing Health permissions, reopen the app and refresh the data.</li>
+        <li>If values look outdated, confirm that Apple Health shows recent data for the same metric.</li>
+        <li>If needed, use the app’s local reset controls to clear local state and start fresh.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Important Product Boundary</h2>
+      <p>
+        Health Signal Monitor is designed to help users notice changes in personal health patterns and suggest follow-up steps when more data may be helpful.
+        It is not a diagnostic tool, not emergency monitoring, and not a replacement for professional medical care.
+      </p>
+      <p>
+        If you believe you may be having a medical emergency, do not wait for app support. Contact local emergency services or a qualified clinician directly.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
